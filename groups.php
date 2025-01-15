@@ -5,7 +5,7 @@ if (!isLoggedIn()) {
     redirect('login.php');
 }
 
-// Obține toate grupurile din care face parte utilizatorul
+// Obține toate grupurile din care fac parte utilizatorii
 $stmt = $pdo->prepare("
     SELECT g.*, 
            COUNT(DISTINCT gm.user_id) as member_count,
@@ -30,7 +30,7 @@ include 'includes/header.php';
 <div class="row mb-4">
     <div class="col-md-12 d-flex justify-content-between align-items-center">
         <h2>Grupurile Mele</h2>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createGroupModal">
+        <button type="button" class="btn bg-info" data-bs-toggle="modal" data-bs-target="#createGroupModal">
             Creează Grup Nou
         </button>
     </div>
@@ -47,7 +47,7 @@ include 'includes/header.php';
                     <p class="card-text"><?php echo htmlspecialchars($group['description']); ?></p>
                     <p class="small text-muted">Membri: <?php echo $group['member_count']; ?></p>
                     <div class="d-flex justify-content-between">
-                        <a href="view_group.php?id=<?php echo $group['id']; ?>" class="btn btn-primary">Vezi Detalii</a>
+                        <a href="view_group.php?id=<?php echo $group['id']; ?>" class="btn bg-info">Vezi Detalii</a>
                         <?php if ($group['is_owner']): ?>
                             <button class="btn btn-danger" onclick="deleteGroup(<?php echo $group['id']; ?>)">Șterge</button>
                         <?php endif; ?>
@@ -79,7 +79,7 @@ include 'includes/header.php';
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Închide</button>
-                    <button type="submit" class="btn btn-primary">Creează Grup</button>
+                    <button type="submit" class="btn bg-info">Creează Grup</button>
                 </div>
             </form>
         </div>

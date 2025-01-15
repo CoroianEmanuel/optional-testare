@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if (empty($errors)) {
         try {
-            // Verifică dacă utilizatorul are dreptul să invite în acest grup
+            // Verifică daca utilizatorul are dreptul să invite în acest grup
             $stmt = $pdo->prepare("
                 SELECT created_by 
                 FROM user_groups 

@@ -52,7 +52,8 @@
                         </li>
                     </ul>
                 <?php endif; ?>
+                <!-- Butonul pentru schimbarea limbii -->
             </div>
         </div>
     </nav>
-    <div class="container mt-4"> 
+    <div class="container mt-4">

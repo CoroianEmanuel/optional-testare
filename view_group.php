@@ -81,7 +81,7 @@ include 'includes/header.php';
                     <h5 class="card-title mb-0">Administrare Grup</h5>
                 </div>
                 <div class="card-body">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#inviteModal">
+                    <button type="button" class="btn bg-info" data-bs-toggle="modal" data-bs-target="#inviteModal">
                         Invită Membri
                     </button>
                     <button type="button" class="btn btn-danger" onclick="deleteGroup(<?php echo $group['id']; ?>)">
@@ -136,7 +136,7 @@ include 'includes/header.php';
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Închide</button>
-                    <button type="submit" class="btn btn-primary">Invită</button>
+                    <button type="submit" class="btn bg-info">Invită</button>
                 </div>
             </form>
         </div>

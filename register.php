@@ -87,7 +87,7 @@ include 'includes/header.php';
                         <input type="password" class="form-control" id="confirm_password" name="confirm_password" required>
                     </div>
                     
-                    <button type="submit" class="btn btn-primary">Înregistrare</button>
+                    <button type="submit" class="btn bg-info">Înregistrare</button>
                 </form>
             </div>
         </div>

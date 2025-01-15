@@ -58,7 +58,7 @@ include 'includes/header.php';
                         <input type="password" class="form-control" id="password" name="password" required>
                     </div>
                     
-                    <button type="submit" class="btn btn-primary">Autentificare</button>
+                    <button type="submit" class="btn bg-info">Autentificare</button>
                     <a href="reset_password.php" class="btn btn-link">Ai uitat parola?</a>
                 </form>
             </div>

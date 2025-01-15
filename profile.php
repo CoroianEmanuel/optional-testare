@@ -13,7 +13,7 @@ try {
         WHERE id = ?
     ");
     
-    // Debug pentru a vedea ID-ul utilizatorului
+    // Debug pentru a vedea IDul utilizatorului
     echo "<!-- User ID: " . $_SESSION['user_id'] . " -->";
     
     $stmt->execute([$_SESSION['user_id']]);
@@ -73,10 +73,10 @@ include 'includes/header.php';
                     }
                     ?>
                 </p>
-                <button class="btn btn-primary w-100 mb-3" onclick="location.href='edit_profile.php'">
+                <button class="btn bg-info w-100 mb-3" onclick="location.href='edit_profile.php'">
                     Editează Profilul
                 </button>
-                <button class="btn btn-outline-primary w-100" onclick="location.href='change_password.php'">
+                <button class="btn btn-outline-info w-100" onclick="location.href='change_password.php'">
                     Schimbă Parola
                 </button>
             </div>

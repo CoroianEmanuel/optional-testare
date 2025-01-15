@@ -96,7 +96,7 @@ include 'includes/header.php';
                         </select>
                     </div>
                     
-                    <button type="submit" class="btn btn-primary">Adaugă Sarcina</button>
+                    <button type="submit" class="btn bg-info">Adaugă Sarcina</button>
                     <a href="dashboard.php" class="btn btn-secondary">Anulează</a>
                 </form>
             </div>

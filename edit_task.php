@@ -116,7 +116,7 @@ include 'includes/header.php';
                         </select>
                     </div>
                     
-                    <button type="submit" class="btn btn-primary">Salvează Modificările</button>
+                    <button type="submit" class="btn bg-info">Salvează Modificările</button>
                     <a href="dashboard.php" class="btn btn-secondary">Anulează</a>
                 </form>
             </div>

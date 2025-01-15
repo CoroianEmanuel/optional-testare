@@ -3,7 +3,7 @@ function confirmDelete(message) {
     return confirm(message || 'Ești sigur că vrei să ștergi acest element?');
 }
 
-// Inițializare tooltips Bootstrap
+// Inițializare tooltips de Bootstrap
 document.addEventListener('DOMContentLoaded', function() {
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
     var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {

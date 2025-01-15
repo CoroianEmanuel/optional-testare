@@ -74,7 +74,7 @@ include 'includes/header.php';
                                value="<?php echo htmlspecialchars($user['email']); ?>" required>
                     </div>
                     <div class="d-grid gap-2">
-                        <button type="submit" class="btn btn-primary">Salvează Modificările</button>
+                        <button type="submit" class="btn bg-info">Salvează Modificările</button>
                         <a href="profile.php" class="btn btn-secondary">Anulează</a>
                     </div>
                 </form>

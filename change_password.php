@@ -82,7 +82,7 @@ include 'includes/header.php';
                                name="confirm_password" required>
                     </div>
                     <div class="d-grid gap-2">
-                        <button type="submit" class="btn btn-primary">Schimbă Parola</button>
+                        <button type="submit" class="btn bg-info">Schimbă Parola</button>
                         <a href="profile.php" class="btn btn-secondary">Anulează</a>
                     </div>
                 </form>
